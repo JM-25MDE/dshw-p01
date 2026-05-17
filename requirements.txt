@@ -1,0 +1,11 @@
+akshare
+baostock
+pandas
+numpy
+matplotlib
+seaborn
+statsmodels
+scipy
+pyarrow
+nbconvert
+jupyter
