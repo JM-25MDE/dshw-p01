@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>02 数据清洗 – 金融数据获取、管理与初步分析</title>
+<title>3&nbsp; 02 数据清洗 – 金融数据获取、管理与初步分析</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -62,11 +62,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./03_analysis.html" rel="next">
+<link href="./01_download.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -76,7 +79,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -108,20 +111,114 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="fullcontent quarto-light">
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02_clean.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">02 数据清洗</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">金融数据获取、管理与初步分析</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/JM-25MDE/dshw-p01" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">金融数据获取、管理与初步分析</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_download.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">01 数据下载</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_clean.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">02 数据清洗</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">03 数据分析</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#环境准备与数据加载" id="toc-环境准备与数据加载" class="nav-link active" data-scroll-target="#环境准备与数据加载"><span class="header-section-number">3.1</span> 1. 环境准备与数据加载</a></li>
+  <li><a href="#单表清洗6步流程" id="toc-单表清洗6步流程" class="nav-link" data-scroll-target="#单表清洗6步流程"><span class="header-section-number">3.2</span> 2. 单表清洗（6步流程）</a>
+  <ul class="collapse">
+  <li><a href="#步骤1缺失值检测" id="toc-步骤1缺失值检测" class="nav-link" data-scroll-target="#步骤1缺失值检测"><span class="header-section-number">3.2.1</span> 2.1 步骤1：缺失值检测</a></li>
+  <li><a href="#步骤2缺失值处理" id="toc-步骤2缺失值处理" class="nav-link" data-scroll-target="#步骤2缺失值处理"><span class="header-section-number">3.2.2</span> 2.2 步骤2：缺失值处理</a></li>
+  <li><a href="#步骤3日期格式统一" id="toc-步骤3日期格式统一" class="nav-link" data-scroll-target="#步骤3日期格式统一"><span class="header-section-number">3.2.3</span> 2.3 步骤3：日期格式统一</a></li>
+  <li><a href="#步骤4数据类型检查" id="toc-步骤4数据类型检查" class="nav-link" data-scroll-target="#步骤4数据类型检查"><span class="header-section-number">3.2.4</span> 2.4 步骤4：数据类型检查</a></li>
+  <li><a href="#步骤5重复值处理" id="toc-步骤5重复值处理" class="nav-link" data-scroll-target="#步骤5重复值处理"><span class="header-section-number">3.2.5</span> 2.5 步骤5：重复值处理</a></li>
+  <li><a href="#步骤6离群值标注" id="toc-步骤6离群值标注" class="nav-link" data-scroll-target="#步骤6离群值标注"><span class="header-section-number">3.2.6</span> 2.6 步骤6：离群值标注</a></li>
+  </ul></li>
+  <li><a href="#宽表与长表转换" id="toc-宽表与长表转换" class="nav-link" data-scroll-target="#宽表与长表转换"><span class="header-section-number">3.3</span> 3. 宽表与长表转换</a>
+  <ul class="collapse">
+  <li><a href="#构建宽表" id="toc-构建宽表" class="nav-link" data-scroll-target="#构建宽表"><span class="header-section-number">3.3.1</span> 3.1 构建宽表</a></li>
+  <li><a href="#宽表转长表" id="toc-宽表转长表" class="nav-link" data-scroll-target="#宽表转长表"><span class="header-section-number">3.3.2</span> 3.2 宽表转长表</a></li>
+  <li><a href="#宽表与长表的适用场景" id="toc-宽表与长表的适用场景" class="nav-link" data-scroll-target="#宽表与长表的适用场景"><span class="header-section-number">3.3.3</span> 3.3 宽表与长表的适用场景</a></li>
+  </ul></li>
+  <li><a href="#多表合并" id="toc-多表合并" class="nav-link" data-scroll-target="#多表合并"><span class="header-section-number">3.4</span> 4. 多表合并</a>
+  <ul class="collapse">
+  <li><a href="#个股日度数据与指数日度数据按日期-left-join" id="toc-个股日度数据与指数日度数据按日期-left-join" class="nav-link" data-scroll-target="#个股日度数据与指数日度数据按日期-left-join"><span class="header-section-number">3.4.1</span> 4.1 个股日度数据与指数日度数据按日期 left join</a></li>
+  <li><a href="#月度宏观数据与日度数据合并" id="toc-月度宏观数据与日度数据合并" class="nav-link" data-scroll-target="#月度宏观数据与日度数据合并"><span class="header-section-number">3.4.2</span> 4.2 月度宏观数据与日度数据合并</a></li>
+  </ul></li>
+  <li><a href="#保存清洗后数据" id="toc-保存清洗后数据" class="nav-link" data-scroll-target="#保存清洗后数据"><span class="header-section-number">3.5</span> 5. 保存清洗后数据</a></li>
+  <li><a href="#多格式存储" id="toc-多格式存储" class="nav-link" data-scroll-target="#多格式存储"><span class="header-section-number">3.6</span> 6. 多格式存储</a>
+  <ul class="collapse">
+  <li><a href="#parquet格式" id="toc-parquet格式" class="nav-link" data-scroll-target="#parquet格式"><span class="header-section-number">3.6.1</span> 6.1 Parquet格式</a></li>
+  <li><a href="#sqlite数据库" id="toc-sqlite数据库" class="nav-link" data-scroll-target="#sqlite数据库"><span class="header-section-number">3.6.2</span> 6.2 SQLite数据库</a></li>
+  <li><a href="#sql查询演示" id="toc-sql查询演示" class="nav-link" data-scroll-target="#sql查询演示"><span class="header-section-number">3.6.3</span> 6.3 SQL查询演示</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">02 数据清洗</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">02 数据清洗</span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li></ul></div></div>
 </div>
 
 
@@ -140,9 +237,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <p>本Notebook完成以下数据清洗工作： 1. 单表清洗（6步流程） 2. 宽表与长表转换 3. 多表合并</p>
 <p>每步均有文字说明和前后对比。</p>
-<section id="环境准备与数据加载" class="level2">
-<h2 class="anchored" data-anchor-id="环境准备与数据加载">1. 环境准备与数据加载</h2>
-<div id="cell-3" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:56.385118Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:56.384846Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:58.581520Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:58.580446Z&quot;}}" data-execution_count="1">
+<section id="环境准备与数据加载" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="环境准备与数据加载"><span class="header-section-number">3.1</span> 1. 环境准备与数据加载</h2>
+<div id="cell-2" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:56.385118Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:56.384846Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:58.581520Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:58.580446Z&quot;}}" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
@@ -182,7 +279,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<div id="cell-4" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:58.585381Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:58.585041Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:58.682375Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:58.681450Z&quot;}}" data-execution_count="2">
+<div id="cell-3" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:58.585381Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:58.585041Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:58.682375Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:58.681450Z&quot;}}" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载所有股票数据（真实数据 - AKShare新浪数据源）</span></span>
@@ -243,13 +340,13 @@ M2: (130, 2)
 </div>
 </div>
 </section>
-<section id="单表清洗6步流程" class="level2">
-<h2 class="anchored" data-anchor-id="单表清洗6步流程">2. 单表清洗（6步流程）</h2>
+<section id="单表清洗6步流程" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="单表清洗6步流程"><span class="header-section-number">3.2</span> 2. 单表清洗（6步流程）</h2>
 <p>对每只股票数据依次执行6步清洗，并汇总结果。</p>
-<section id="步骤1缺失值检测" class="level3">
-<h3 class="anchored" data-anchor-id="步骤1缺失值检测">2.1 步骤1：缺失值检测</h3>
+<section id="步骤1缺失值检测" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="步骤1缺失值检测"><span class="header-section-number">3.2.1</span> 2.1 步骤1：缺失值检测</h3>
 <p>统计每只股票各列的缺失值数量和比例，并分析可能原因。</p>
-<div id="cell-7" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:58.723886Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:58.723422Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:58.753966Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:58.753150Z&quot;}}" data-execution_count="3">
+<div id="cell-6" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:58.723886Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:58.723422Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:58.753966Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:58.753150Z&quot;}}" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"="</span> <span class="op">*</span> <span class="dv">70</span>)</span>
@@ -296,10 +393,10 @@ M2: (130, 2)
 </div>
 </div>
 </section>
-<section id="步骤2缺失值处理" class="level3">
-<h3 class="anchored" data-anchor-id="步骤2缺失值处理">2.2 步骤2：缺失值处理</h3>
+<section id="步骤2缺失值处理" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="步骤2缺失值处理"><span class="header-section-number">3.2.2</span> 2.2 步骤2：缺失值处理</h3>
 <p><strong>处理策略</strong>：对于时间序列数据，缺失值采用<strong>向前填充</strong>（forward fill），因为： - 股票行情是时间序列数据，相邻交易日数据相关性高 - 向前填充可以保持序列的连续性，避免引入虚假波动 - 删除缺失值会破坏时间序列的完整性</p>
-<div id="cell-9" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:58.757347Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:58.757073Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:58.801097Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:58.800233Z&quot;}}" data-execution_count="4">
+<div id="cell-8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:58.757347Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:58.757073Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:58.801097Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:58.800233Z&quot;}}" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"="</span> <span class="op">*</span> <span class="dv">70</span>)</span>
@@ -331,10 +428,10 @@ M2: (130, 2)
 </div>
 </div>
 </section>
-<section id="步骤3日期格式统一" class="level3">
-<h3 class="anchored" data-anchor-id="步骤3日期格式统一">2.3 步骤3：日期格式统一</h3>
+<section id="步骤3日期格式统一" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="步骤3日期格式统一"><span class="header-section-number">3.2.3</span> 2.3 步骤3：日期格式统一</h3>
 <p>将日期列统一为 <code>datetime64</code> 格式，并设为索引。</p>
-<div id="cell-11" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:58.804251Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:58.804043Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:58.833807Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:58.833309Z&quot;}}" data-execution_count="5">
+<div id="cell-10" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:58.804251Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:58.804043Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:58.833807Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:58.833309Z&quot;}}" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"="</span> <span class="op">*</span> <span class="dv">70</span>)</span>
@@ -377,10 +474,10 @@ M2: (130, 2)
 </div>
 </div>
 </section>
-<section id="步骤4数据类型检查" class="level3">
-<h3 class="anchored" data-anchor-id="步骤4数据类型检查">2.4 步骤4：数据类型检查</h3>
+<section id="步骤4数据类型检查" class="level3" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="步骤4数据类型检查"><span class="header-section-number">3.2.4</span> 2.4 步骤4：数据类型检查</h3>
 <p>确认数值型字段为 <code>float64</code> 或 <code>int64</code>，字符型字段已正确标注。</p>
-<div id="cell-13" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:58.836837Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:58.836637Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:58.856753Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:58.856009Z&quot;}}" data-execution_count="6">
+<div id="cell-12" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:58.836837Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:58.836637Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:58.856753Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:58.856009Z&quot;}}" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"="</span> <span class="op">*</span> <span class="dv">70</span>)</span>
@@ -427,10 +524,10 @@ M2: (130, 2)
 </div>
 </div>
 </section>
-<section id="步骤5重复值处理" class="level3">
-<h3 class="anchored" data-anchor-id="步骤5重复值处理">2.5 步骤5：重复值处理</h3>
+<section id="步骤5重复值处理" class="level3" data-number="3.2.5">
+<h3 data-number="3.2.5" class="anchored" data-anchor-id="步骤5重复值处理"><span class="header-section-number">3.2.5</span> 2.5 步骤5：重复值处理</h3>
 <p>检测并删除重复的日期索引记录。</p>
-<div id="cell-15" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:58.859908Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:58.859660Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:58.864503Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:58.863797Z&quot;}}" data-execution_count="7">
+<div id="cell-14" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:58.859908Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:58.859660Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:58.864503Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:58.863797Z&quot;}}" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"="</span> <span class="op">*</span> <span class="dv">70</span>)</span>
@@ -459,11 +556,11 @@ M2: (130, 2)
 </div>
 </div>
 </section>
-<section id="步骤6离群值标注" class="level3">
-<h3 class="anchored" data-anchor-id="步骤6离群值标注">2.6 步骤6：离群值标注</h3>
+<section id="步骤6离群值标注" class="level3" data-number="3.2.6">
+<h3 data-number="3.2.6" class="anchored" data-anchor-id="步骤6离群值标注"><span class="header-section-number">3.2.6</span> 2.6 步骤6：离群值标注</h3>
 <p>计算日收益率，将日收益率超过±20%的标注为 <code>is_extreme=True</code>。</p>
 <p><strong>阈值选择依据</strong>：A股有±10%涨跌停限制（ST股票为±5%），但后复权数据会反映除权除息的影响，因此可能出现超过±10%的收益率。±20%的阈值可以捕获因除权除息或特殊事件导致的极端波动。</p>
-<div id="cell-17" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:58.867523Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:58.867240Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:58.927959Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:58.927249Z&quot;}}" data-execution_count="8">
+<div id="cell-16" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:58.867523Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:58.867240Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:58.927959Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:58.927249Z&quot;}}" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"="</span> <span class="op">*</span> <span class="dv">70</span>)</span>
@@ -531,12 +628,12 @@ code  extreme_count  extreme_pct  name
 </div>
 </section>
 </section>
-<section id="宽表与长表转换" class="level2">
-<h2 class="anchored" data-anchor-id="宽表与长表转换">3. 宽表与长表转换</h2>
-<section id="构建宽表" class="level3">
-<h3 class="anchored" data-anchor-id="构建宽表">3.1 构建宽表</h3>
+<section id="宽表与长表转换" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="宽表与长表转换"><span class="header-section-number">3.3</span> 3. 宽表与长表转换</h2>
+<section id="构建宽表" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="构建宽表"><span class="header-section-number">3.3.1</span> 3.1 构建宽表</h3>
 <p>将10只股票的收盘价合并为宽表，日期为索引，每列一只股票。</p>
-<div id="cell-20" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:58.931317Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:58.931097Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:58.951791Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:58.950868Z&quot;}}" data-execution_count="9">
+<div id="cell-19" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:58.931317Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:58.931097Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:58.951791Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:58.950868Z&quot;}}" data-execution_count="9">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 构建宽表：日期为索引，每列一只股票的收盘价</span></span>
@@ -574,10 +671,10 @@ date
 </div>
 </div>
 </section>
-<section id="宽表转长表" class="level3">
-<h3 class="anchored" data-anchor-id="宽表转长表">3.2 宽表转长表</h3>
+<section id="宽表转长表" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="宽表转长表"><span class="header-section-number">3.3.2</span> 3.2 宽表转长表</h3>
 <p>使用 <code>pd.melt</code> 将宽表转换为长表，字段为 <code>date, code, close</code>。</p>
-<div id="cell-22" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:58.954788Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:58.954584Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:58.964999Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:58.964167Z&quot;}}" data-execution_count="10">
+<div id="cell-21" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:58.954788Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:58.954584Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:58.964999Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:58.964167Z&quot;}}" data-execution_count="10">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 宽表转长表</span></span>
@@ -614,18 +711,18 @@ date
 </div>
 </div>
 </section>
-<section id="宽表与长表的适用场景" class="level3">
-<h3 class="anchored" data-anchor-id="宽表与长表的适用场景">3.3 宽表与长表的适用场景</h3>
+<section id="宽表与长表的适用场景" class="level3" data-number="3.3.3">
+<h3 data-number="3.3.3" class="anchored" data-anchor-id="宽表与长表的适用场景"><span class="header-section-number">3.3.3</span> 3.3 宽表与长表的适用场景</h3>
 <p><strong>宽表适合的操作</strong>： - 计算股票间的相关系数矩阵（直接调用 <code>.corr()</code>） - 多股票走势对比可视化（每列一条线） - PCA/因子分析（每列是一个特征维度） - 向量化运算（如计算组合收益率）</p>
 <p><strong>长表适合的操作</strong>： - 分组统计（<code>groupby</code> 按股票代码或行业聚合） - ggplot/seaborn 分面绘图（<code>hue='code'</code> 或 <code>col='code'</code>） - 存储效率高（当数据稀疏时，长表不存储空值） - 合并其他维度的数据（如加入行业、财务指标等）</p>
 </section>
 </section>
-<section id="多表合并" class="level2">
-<h2 class="anchored" data-anchor-id="多表合并">4. 多表合并</h2>
-<section id="个股日度数据与指数日度数据按日期-left-join" class="level3">
-<h3 class="anchored" data-anchor-id="个股日度数据与指数日度数据按日期-left-join">4.1 个股日度数据与指数日度数据按日期 left join</h3>
+<section id="多表合并" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="多表合并"><span class="header-section-number">3.4</span> 4. 多表合并</h2>
+<section id="个股日度数据与指数日度数据按日期-left-join" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="个股日度数据与指数日度数据按日期-left-join"><span class="header-section-number">3.4.1</span> 4.1 个股日度数据与指数日度数据按日期 left join</h3>
 <p>将每只股票的日度数据与沪深300日度数据按日期进行左连接。</p>
-<div id="cell-26" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:58.967955Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:58.967746Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:58.983207Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:58.982444Z&quot;}}" data-execution_count="11">
+<div id="cell-25" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:58.967955Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:58.967746Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:58.983207Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:58.982444Z&quot;}}" data-execution_count="11">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"="</span> <span class="op">*</span> <span class="dv">70</span>)</span>
@@ -668,10 +765,10 @@ date
 </div>
 </div>
 </section>
-<section id="月度宏观数据与日度数据合并" class="level3">
-<h3 class="anchored" data-anchor-id="月度宏观数据与日度数据合并">4.2 月度宏观数据与日度数据合并</h3>
+<section id="月度宏观数据与日度数据合并" class="level3" data-number="3.4.2">
+<h3 data-number="3.4.2" class="anchored" data-anchor-id="月度宏观数据与日度数据合并"><span class="header-section-number">3.4.2</span> 4.2 月度宏观数据与日度数据合并</h3>
 <p>CPI和M2为月度数据，需要处理频率不一致问题。采用<strong>月末对齐</strong>策略： - 将月度宏观数据的日期映射到所属月份的最后一天 - 与日度数据按日期left join - 缺失的日度行向前填充宏观指标值（即同月内使用相同的宏观值）</p>
-<div id="cell-28" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:58.986119Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:58.985853Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:59.062839Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:59.061893Z&quot;}}" data-execution_count="12">
+<div id="cell-27" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:58.986119Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:58.985853Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:59.062839Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:59.061893Z&quot;}}" data-execution_count="12">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"="</span> <span class="op">*</span> <span class="dv">70</span>)</span>
@@ -740,9 +837,9 @@ M2数据: 130 条，时间范围 2020-01-31 00:00:00 ~ 2025-09-30 00:00:00
 </div>
 </section>
 </section>
-<section id="保存清洗后数据" class="level2">
-<h2 class="anchored" data-anchor-id="保存清洗后数据">5. 保存清洗后数据</h2>
-<div id="cell-30" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:59.066168Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:59.065904Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:59.519145Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:59.518180Z&quot;}}" data-execution_count="13">
+<section id="保存清洗后数据" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="保存清洗后数据"><span class="header-section-number">3.5</span> 5. 保存清洗后数据</h2>
+<div id="cell-29" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:59.066168Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:59.065904Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:59.519145Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:59.518180Z&quot;}}" data-execution_count="13">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 保存每只股票清洗后的数据</span></span>
@@ -764,7 +861,7 @@ M2数据: 130 条，时间范围 2020-01-31 00:00:00 ~ 2025-09-30 00:00:00
 已保存: data/clean/clean_002352.csv ((2800, 14))</code></pre>
 </div>
 </div>
-<div id="cell-31" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:59.522340Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:59.522133Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:59.994725Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:59.994025Z&quot;}}" data-execution_count="14">
+<div id="cell-30" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:59.522340Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:59.522133Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:56:59.994725Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:56:59.994025Z&quot;}}" data-execution_count="14">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 构建合并数据集</span></span>
@@ -817,11 +914,11 @@ M2数据: 130 条，时间范围 2020-01-31 00:00:00 ~ 2025-09-30 00:00:00
 </div>
 </div>
 </section>
-<section id="多格式存储" class="level2">
-<h2 class="anchored" data-anchor-id="多格式存储">6. 多格式存储</h2>
-<section id="parquet格式" class="level3">
-<h3 class="anchored" data-anchor-id="parquet格式">6.1 Parquet格式</h3>
-<div id="cell-33" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:59.997803Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:59.997597Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:57:00.004811Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:57:00.003550Z&quot;}}" data-execution_count="15">
+<section id="多格式存储" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="多格式存储"><span class="header-section-number">3.6</span> 6. 多格式存储</h2>
+<section id="parquet格式" class="level3" data-number="3.6.1">
+<h3 data-number="3.6.1" class="anchored" data-anchor-id="parquet格式"><span class="header-section-number">3.6.1</span> 6.1 Parquet格式</h3>
+<div id="cell-32" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:56:59.997803Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:56:59.997597Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:57:00.004811Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:57:00.003550Z&quot;}}" data-execution_count="15">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
@@ -867,10 +964,10 @@ M2数据: 130 条，时间范围 2020-01-31 00:00:00 ~ 2025-09-30 00:00:00
 </div>
 </div>
 </section>
-<section id="sqlite数据库" class="level3">
-<h3 class="anchored" data-anchor-id="sqlite数据库">6.2 SQLite数据库</h3>
+<section id="sqlite数据库" class="level3" data-number="3.6.2">
+<h3 data-number="3.6.2" class="anchored" data-anchor-id="sqlite数据库"><span class="header-section-number">3.6.2</span> 6.2 SQLite数据库</h3>
 <p>设计3张表： 1. <code>stock_daily</code> - 股票日度行情 2. <code>index_daily</code> - 指数日度行情 3. <code>finance_annual</code> - 年度财务指标</p>
-<div id="cell-35" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:57:00.008353Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:57:00.008131Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:57:00.444865Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:57:00.443686Z&quot;}}" data-execution_count="16">
+<div id="cell-34" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:57:00.008353Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:57:00.008131Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:57:00.444865Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:57:00.443686Z&quot;}}" data-execution_count="16">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sqlite3</span>
@@ -910,10 +1007,10 @@ finance_annual: 40 行
 </div>
 </div>
 </section>
-<section id="sql查询演示" class="level3">
-<h3 class="anchored" data-anchor-id="sql查询演示">6.3 SQL查询演示</h3>
+<section id="sql查询演示" class="level3" data-number="3.6.3">
+<h3 data-number="3.6.3" class="anchored" data-anchor-id="sql查询演示"><span class="header-section-number">3.6.3</span> 6.3 SQL查询演示</h3>
 <p>演示2条有业务含义的跨表JOIN查询。</p>
-<div id="cell-37" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:57:00.448669Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:57:00.448402Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:57:00.476953Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:57:00.476315Z&quot;}}" data-execution_count="17">
+<div id="cell-36" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-05-17T09:57:00.448669Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-05-17T09:57:00.448402Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-05-17T09:57:00.476953Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-05-17T09:57:00.476315Z&quot;}}" data-execution_count="17">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 查询1：各行业2024年ROE均值及对应股票的年化收益率</span></span>
@@ -1431,6 +1528,18 @@ Index: []
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./01_download.html" class="pagination-link" aria-label="01 数据下载">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">01 数据下载</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./03_analysis.html" class="pagination-link" aria-label="03 数据分析">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">03 数据分析</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 

@@ -6,6 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="邓佳鸣 (25210124)">
+<meta name="dcterms.date" content="2026-05-18">
 
 <title>金融数据获取、管理与初步分析</title>
 <style>
@@ -62,11 +64,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./01_download.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -76,7 +80,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -108,30 +112,146 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="fullcontent quarto-light">
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">金融数据获取、管理与初步分析</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">金融数据获取、管理与初步分析</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/JM-25MDE/dshw-p01" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">金融数据获取、管理与初步分析</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_download.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">01 数据下载</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_clean.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">02 数据清洗</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">03 数据分析</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#金融数据获取管理与初步分析" id="toc-金融数据获取管理与初步分析" class="nav-link active" data-scroll-target="#金融数据获取管理与初步分析"><span class="header-section-number">1</span> 金融数据获取、管理与初步分析</a>
+  <ul class="collapse">
+  <li><a href="#一项目概述" id="toc-一项目概述" class="nav-link" data-scroll-target="#一项目概述"><span class="header-section-number">1.1</span> 一、项目概述</a></li>
+  <li><a href="#二数据来源" id="toc-二数据来源" class="nav-link" data-scroll-target="#二数据来源"><span class="header-section-number">1.2</span> 二、数据来源</a></li>
+  <li><a href="#三描述性统计" id="toc-三描述性统计" class="nav-link" data-scroll-target="#三描述性统计"><span class="header-section-number">1.3</span> 三、描述性统计</a></li>
+  <li><a href="#四可视化分析" id="toc-四可视化分析" class="nav-link" data-scroll-target="#四可视化分析"><span class="header-section-number">1.4</span> 四、可视化分析</a>
+  <ul class="collapse">
+  <li><a href="#图1归一化收盘价走势" id="toc-图1归一化收盘价走势" class="nav-link" data-scroll-target="#图1归一化收盘价走势"><span class="header-section-number">1.4.1</span> 图1：归一化收盘价走势</a></li>
+  <li><a href="#图2日收益率分布" id="toc-图2日收益率分布" class="nav-link" data-scroll-target="#图2日收益率分布"><span class="header-section-number">1.4.2</span> 图2：日收益率分布</a></li>
+  <li><a href="#图3收益率相关系数热力图" id="toc-图3收益率相关系数热力图" class="nav-link" data-scroll-target="#图3收益率相关系数热力图"><span class="header-section-number">1.4.3</span> 图3：收益率相关系数热力图</a></li>
+  <li><a href="#图4行业对比分析" id="toc-图4行业对比分析" class="nav-link" data-scroll-target="#图4行业对比分析"><span class="header-section-number">1.4.4</span> 图4：行业对比分析</a></li>
+  <li><a href="#图5capm-beta系数" id="toc-图5capm-beta系数" class="nav-link" data-scroll-target="#图5capm-beta系数"><span class="header-section-number">1.4.5</span> 图5：CAPM Beta系数</a></li>
+  <li><a href="#图6宏观敏感性分析" id="toc-图6宏观敏感性分析" class="nav-link" data-scroll-target="#图6宏观敏感性分析"><span class="header-section-number">1.4.6</span> 图6：宏观敏感性分析</a></li>
+  </ul></li>
+  <li><a href="#五capm回归结果" id="toc-五capm回归结果" class="nav-link" data-scroll-target="#五capm回归结果"><span class="header-section-number">1.5</span> 五、CAPM回归结果</a>
+  <ul class="collapse">
+  <li><a href="#分析讨论" id="toc-分析讨论" class="nav-link" data-scroll-target="#分析讨论"><span class="header-section-number">1.5.1</span> 分析讨论</a></li>
+  </ul></li>
+  <li><a href="#六存储格式对比" id="toc-六存储格式对比" class="nav-link" data-scroll-target="#六存储格式对比"><span class="header-section-number">1.6</span> 六、存储格式对比</a></li>
+  <li><a href="#七作业完成情况" id="toc-七作业完成情况" class="nav-link" data-scroll-target="#七作业完成情况"><span class="header-section-number">1.7</span> 七、作业完成情况</a></li>
+  <li><a href="#相关文件" id="toc-相关文件" class="nav-link" data-scroll-target="#相关文件"><span class="header-section-number">1.8</span> 相关文件</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7"></h1></header><div class="quarto-title-block"><div class="quarto-title-tools-only"><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">金融数据获取、管理与初步分析</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="金融数据获取管理与初步分析" class="level1">
-<h1>金融数据获取、管理与初步分析</h1>
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>邓佳鸣 (25210124) </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 18, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="金融数据获取管理与初步分析" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> 金融数据获取、管理与初步分析</h1>
 <p><strong>学号</strong>：25210124 <strong>姓名</strong>：邓佳鸣 <strong>GitHub</strong>：https://github.com/JM-25MDE/dshw-p01</p>
 <hr>
-<section id="一项目概述" class="level2">
-<h2 class="anchored" data-anchor-id="一项目概述">一、项目概述</h2>
+<section id="一项目概述" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="一项目概述"><span class="header-section-number">1.1</span> 一、项目概述</h2>
 <p>本作业完成金融数据获取、管理与初步分析的全流程实践，选取10只A股股票（覆盖7个行业），时间跨度2020-01-01至今。</p>
 </section>
-<section id="二数据来源" class="level2">
-<h2 class="anchored" data-anchor-id="二数据来源">二、数据来源</h2>
+<section id="二数据来源" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="二数据来源"><span class="header-section-number">1.2</span> 二、数据来源</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -174,8 +294,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 </section>
-<section id="三描述性统计" class="level2">
-<h2 class="anchored" data-anchor-id="三描述性统计">三、描述性统计</h2>
+<section id="三描述性统计" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="三描述性统计"><span class="header-section-number">1.3</span> 三、描述性统计</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -233,10 +353,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </table>
 <hr>
 </section>
-<section id="四可视化分析" class="level2">
-<h2 class="anchored" data-anchor-id="四可视化分析">四、可视化分析</h2>
-<section id="图1归一化收盘价走势" class="level3">
-<h3 class="anchored" data-anchor-id="图1归一化收盘价走势">图1：归一化收盘价走势</h3>
+<section id="四可视化分析" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="四可视化分析"><span class="header-section-number">1.4</span> 四、可视化分析</h2>
+<section id="图1归一化收盘价走势" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="图1归一化收盘价走势"><span class="header-section-number">1.4.1</span> 图1：归一化收盘价走势</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="output/fig1_cumulative_returns.png" class="img-fluid figure-img"></p>
@@ -245,8 +365,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>能源股和比亚迪涨幅最大，万科A受房地产行业影响表现疲弱。</p>
 </section>
-<section id="图2日收益率分布" class="level3">
-<h3 class="anchored" data-anchor-id="图2日收益率分布">图2：日收益率分布</h3>
+<section id="图2日收益率分布" class="level3" data-number="1.4.2">
+<h3 data-number="1.4.2" class="anchored" data-anchor-id="图2日收益率分布"><span class="header-section-number">1.4.2</span> 图2：日收益率分布</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="output/fig2_return_distribution.png" class="img-fluid figure-img"></p>
@@ -255,8 +375,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>所有股票收益率呈现尖峰厚尾特征，偏离正态分布。</p>
 </section>
-<section id="图3收益率相关系数热力图" class="level3">
-<h3 class="anchored" data-anchor-id="图3收益率相关系数热力图">图3：收益率相关系数热力图</h3>
+<section id="图3收益率相关系数热力图" class="level3" data-number="1.4.3">
+<h3 data-number="1.4.3" class="anchored" data-anchor-id="图3收益率相关系数热力图"><span class="header-section-number">1.4.3</span> 图3：收益率相关系数热力图</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="output/fig3_correlation_matrix.png" class="img-fluid figure-img"></p>
@@ -265,8 +385,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>同行业股票相关性较高（如银行股之间接近0.9），跨行业相关性较低。</p>
 </section>
-<section id="图4行业对比分析" class="level3">
-<h3 class="anchored" data-anchor-id="图4行业对比分析">图4：行业对比分析</h3>
+<section id="图4行业对比分析" class="level3" data-number="1.4.4">
+<h3 data-number="1.4.4" class="anchored" data-anchor-id="图4行业对比分析"><span class="header-section-number">1.4.4</span> 图4：行业对比分析</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="output/fig4_industry_comparison.png" class="img-fluid figure-img"></p>
@@ -274,8 +394,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 </section>
-<section id="图5capm-beta系数" class="level3">
-<h3 class="anchored" data-anchor-id="图5capm-beta系数">图5：CAPM Beta系数</h3>
+<section id="图5capm-beta系数" class="level3" data-number="1.4.5">
+<h3 data-number="1.4.5" class="anchored" data-anchor-id="图5capm-beta系数"><span class="header-section-number">1.4.5</span> 图5：CAPM Beta系数</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="output/fig5_capm_beta.png" class="img-fluid figure-img"></p>
@@ -284,8 +404,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Beta系数范围0.66-0.99，银行股Beta较高但Alpha不显著。</p>
 </section>
-<section id="图6宏观敏感性分析" class="level3">
-<h3 class="anchored" data-anchor-id="图6宏观敏感性分析">图6：宏观敏感性分析</h3>
+<section id="图6宏观敏感性分析" class="level3" data-number="1.4.6">
+<h3 data-number="1.4.6" class="anchored" data-anchor-id="图6宏观敏感性分析"><span class="header-section-number">1.4.6</span> 图6：宏观敏感性分析</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="output/fig6_macro_sensitivity.png" class="img-fluid figure-img"></p>
@@ -296,8 +416,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <hr>
 </section>
 </section>
-<section id="五capm回归结果" class="level2">
-<h2 class="anchored" data-anchor-id="五capm回归结果">五、CAPM回归结果</h2>
+<section id="五capm回归结果" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="五capm回归结果"><span class="header-section-number">1.5</span> 五、CAPM回归结果</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -347,8 +467,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 <p>*表示p&lt;0.05显著</p>
-<section id="分析讨论" class="level3">
-<h3 class="anchored" data-anchor-id="分析讨论">分析讨论</h3>
+<section id="分析讨论" class="level3" data-number="1.5.1">
+<h3 data-number="1.5.1" class="anchored" data-anchor-id="分析讨论"><span class="header-section-number">1.5.1</span> 分析讨论</h3>
 <ol type="1">
 <li><p><strong>Beta系数</strong>：所有股票Beta均小于或接近1，说明波动性低于或接近市场。能源股Beta接近1，符合周期性行业特征；银行股Beta约0.8，体现防御属性。</p></li>
 <li><p><strong>Alpha显著性</strong>：能源股（禾望电气、科士达）和比亚迪的Alpha显著为正，可能存在超额收益机会。</p></li>
@@ -357,8 +477,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <hr>
 </section>
 </section>
-<section id="六存储格式对比" class="level2">
-<h2 class="anchored" data-anchor-id="六存储格式对比">六、存储格式对比</h2>
+<section id="六存储格式对比" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="六存储格式对比"><span class="header-section-number">1.6</span> 六、存储格式对比</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -387,8 +507,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </table>
 <hr>
 </section>
-<section id="七作业完成情况" class="level2">
-<h2 class="anchored" data-anchor-id="七作业完成情况">七、作业完成情况</h2>
+<section id="七作业完成情况" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="七作业完成情况"><span class="header-section-number">1.7</span> 七、作业完成情况</h2>
 <ul class="task-list">
 <li><label><input type="checkbox" checked="">数据获取（股票、指数、宏观、财务）</label></li>
 <li><label><input type="checkbox" checked="">目录结构与存储规范（CSV + Parquet + SQLite）</label></li>
@@ -400,8 +520,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <hr>
 </section>
-<section id="相关文件" class="level2">
-<h2 class="anchored" data-anchor-id="相关文件">相关文件</h2>
+<section id="相关文件" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="相关文件"><span class="header-section-number">1.8</span> 相关文件</h2>
 <ul>
 <li><a href="./01_download.html">数据下载 Notebook</a></li>
 <li><a href="./02_clean.html">数据清洗 Notebook</a></li>
@@ -865,7 +985,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     }
   });
-  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./01_download.html" class="pagination-link" aria-label="01 数据下载">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">01 数据下载</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># 金融数据获取、管理与初步分析</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>**学号**：25210124</span>
