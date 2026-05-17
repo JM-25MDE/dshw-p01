@@ -1,15 +1,24 @@
-[2026-05-17 19:51:22] AKShare   603063_禾望电气  shape=(1540, 7)  数据源=新浪后复权
-[2026-05-17 19:51:22] AKShare   002518_科士达  shape=(1540, 7)  数据源=新浪后复权
-[2026-05-17 19:51:22] AKShare   603118_共进股份  shape=(1535, 7)  数据源=新浪后复权
-[2026-05-17 19:51:22] AKShare   000063_中兴通讯  shape=(1539, 7)  数据源=新浪后复权
-[2026-05-17 19:51:22] AKShare   600036_招商银行  shape=(1540, 7)  数据源=新浪后复权
-[2026-05-17 19:51:22] AKShare   002142_宁波银行  shape=(1534, 7)  数据源=新浪后复权
-[2026-05-17 19:51:22] AKShare   002594_比亚迪  shape=(1540, 7)  数据源=新浪后复权
-[2026-05-17 19:51:22] AKShare   000002_万科A  shape=(1540, 7)  数据源=新浪后复权
-[2026-05-17 19:51:22] AKShare   600519_贵州茅台  shape=(1540, 7)  数据源=新浪后复权
-[2026-05-17 19:51:22] AKShare   002352_顺丰控股  shape=(1537, 7)  数据源=新浪后复权
-[2026-05-17 19:51:22] AKShare   000300_沪深300  shape=(1540, 6)  数据源=东方财富
-[2026-05-17 19:51:22] AKShare   399006_创业板指  shape=(1540, 6)  数据源=东方财富
-[2026-05-17 19:51:22] AKShare   CPI同比  shape=(70, 2)  数据源=东方财富宏观
-[2026-05-17 19:51:22] AKShare   M2同比  shape=(130, 2)  数据源=东方财富宏观
-[2026-05-17 19:51:22] AKShare   财务指标(ROE+净利润率)  shape=(40, 4)  数据源=东方财富财务
+[2026-05-17 22:36:26] FAILED   stock_603063  Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-05-17 22:36:28] FAILED   stock_002518  Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-05-17 22:36:29] FAILED   stock_603118  Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-05-17 22:36:30] FAILED   stock_000063  Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-05-17 22:36:31] FAILED   stock_600036  Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-05-17 22:36:32] FAILED   stock_002142  Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-05-17 22:36:33] FAILED   stock_002594  Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-05-17 22:36:34] FAILED   stock_000002  Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-05-17 22:36:36] FAILED   stock_600519  Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-05-17 22:36:37] FAILED   stock_002352  Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-05-17 22:36:39] FAILED   index_000300  Error: Length mismatch: Expected axis has 6 elements, new values have 7 elements
+[2026-05-17 22:36:40] FAILED   index_399006  Error: Length mismatch: Expected axis has 6 elements, new values have 7 elements
+[2026-05-17 22:36:45] FAILED   macro_cpi  Error: Length mismatch: Expected axis has 5 elements, new values have 2 elements
+[2026-05-17 22:36:49] FAILED   macro_m2  Error: Length mismatch: Expected axis has 5 elements, new values have 2 elements
+[2026-05-17 22:36:49] SUCCESS  finance_603063  shape=(0, 4)
+[2026-05-17 22:36:50] SUCCESS  finance_002518  shape=(0, 4)
+[2026-05-17 22:36:51] SUCCESS  finance_603118  shape=(0, 4)
+[2026-05-17 22:36:52] SUCCESS  finance_000063  shape=(0, 4)
+[2026-05-17 22:37:01] SUCCESS  finance_600036  shape=(20, 4)
+[2026-05-17 22:37:02] SUCCESS  finance_002142  shape=(0, 4)
+[2026-05-17 22:37:03] SUCCESS  finance_002594  shape=(0, 4)
+[2026-05-17 22:37:03] SUCCESS  finance_000002  shape=(0, 4)
+[2026-05-17 22:37:04] SUCCESS  finance_600519  shape=(0, 4)
+[2026-05-17 22:37:05] SUCCESS  finance_002352  shape=(0, 4)

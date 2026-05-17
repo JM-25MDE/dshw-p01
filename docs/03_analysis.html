@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>4&nbsp; 03 数据分析 – 金融数据获取、管理与初步分析</title>
+<title>03 数据分析 – 金融数据获取、管理与初步分析</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -62,13 +62,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./02_clean.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -78,7 +76,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -139,107 +137,20 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03_analysis.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">03 数据分析</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
-</header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">金融数据获取、管理与初步分析</a> 
-        <div class="sidebar-tools-main">
-    <a href="https://github.com/JM-25MDE/dshw-p01" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-</div>
-    </div>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">金融数据获取、管理与初步分析</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./01_download.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">01 数据下载</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./02_clean.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">02 数据清洗</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./03_analysis.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">03 数据分析</span></span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#环境准备与数据加载" id="toc-环境准备与数据加载" class="nav-link active" data-scroll-target="#环境准备与数据加载"><span class="header-section-number">4.1</span> 1. 环境准备与数据加载</a></li>
-  <li><a href="#基本统计量" id="toc-基本统计量" class="nav-link" data-scroll-target="#基本统计量"><span class="header-section-number">4.2</span> 2. 基本统计量</a></li>
-  <li><a href="#可视化" id="toc-可视化" class="nav-link" data-scroll-target="#可视化"><span class="header-section-number">4.3</span> 3. 可视化</a>
-  <ul class="collapse">
-  <li><a href="#图1归一化收盘价走势图" id="toc-图1归一化收盘价走势图" class="nav-link" data-scroll-target="#图1归一化收盘价走势图"><span class="header-section-number">4.3.1</span> 图1：归一化收盘价走势图</a></li>
-  <li><a href="#图2日收益率分布图" id="toc-图2日收益率分布图" class="nav-link" data-scroll-target="#图2日收益率分布图"><span class="header-section-number">4.3.2</span> 图2：日收益率分布图</a></li>
-  <li><a href="#图3收益率相关系数热力图" id="toc-图3收益率相关系数热力图" class="nav-link" data-scroll-target="#图3收益率相关系数热力图"><span class="header-section-number">4.3.3</span> 图3：收益率相关系数热力图</a></li>
-  <li><a href="#图4宏观指标与股市关系" id="toc-图4宏观指标与股市关系" class="nav-link" data-scroll-target="#图4宏观指标与股市关系"><span class="header-section-number">4.3.4</span> 图4：宏观指标与股市关系</a></li>
-  </ul></li>
-  <li><a href="#capm模型估计" id="toc-capm模型估计" class="nav-link" data-scroll-target="#capm模型估计"><span class="header-section-number">4.4</span> 4. CAPM模型估计</a>
-  <ul class="collapse">
-  <li><a href="#模型设定" id="toc-模型设定" class="nav-link" data-scroll-target="#模型设定"><span class="header-section-number">4.4.1</span> 4.1 模型设定</a></li>
-  <li><a href="#beta系数可视化" id="toc-beta系数可视化" class="nav-link" data-scroll-target="#beta系数可视化"><span class="header-section-number">4.4.2</span> 4.2 Beta系数可视化</a></li>
-  <li><a href="#capm结果讨论" id="toc-capm结果讨论" class="nav-link" data-scroll-target="#capm结果讨论"><span class="header-section-number">4.4.3</span> 4.3 CAPM结果讨论</a></li>
-  </ul></li>
-  <li><a href="#宏观指标对股票收益率的影响选做5.2" id="toc-宏观指标对股票收益率的影响选做5.2" class="nav-link" data-scroll-target="#宏观指标对股票收益率的影响选做5.2"><span class="header-section-number">4.5</span> 5. 宏观指标对股票收益率的影响（选做5.2）</a>
-  <ul class="collapse">
-  <li><a href="#宏观敏感性分析" id="toc-宏观敏感性分析" class="nav-link" data-scroll-target="#宏观敏感性分析"><span class="header-section-number">4.5.1</span> 宏观敏感性分析</a></li>
-  </ul></li>
-  <li><a href="#财务指标跨公司对比选做图5" id="toc-财务指标跨公司对比选做图5" class="nav-link" data-scroll-target="#财务指标跨公司对比选做图5"><span class="header-section-number">4.6</span> 6. 财务指标跨公司对比（选做图5）</a></li>
-  <li><a href="#总结与结论" id="toc-总结与结论" class="nav-link" data-scroll-target="#总结与结论"><span class="header-section-number">4.7</span> 7. 总结与结论</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">03 数据分析</span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title">03 数据分析</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li></ul></div></div>
 </div>
 
 
@@ -258,15 +169,15 @@ window.Quarto = {
 
 <p>本Notebook完成以下分析工作： 1. 描述性统计 2. 可视化（图1-5） 3. CAPM回归分析 4. 宏观指标对股票收益率的影响（选做5.2）</p>
 <p>每张图后均有≥2句文字解读。</p>
-<section id="环境准备与数据加载" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="环境准备与数据加载"><span class="header-section-number">4.1</span> 1. 环境准备与数据加载</h2>
-<div id="cell-2" class="cell">
+<section id="环境准备与数据加载" class="level2">
+<h2 class="anchored" data-anchor-id="环境准备与数据加载">1. 环境准备与数据加载</h2>
+<div id="cell-3" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> osimport pandas <span class="im">as</span> pdimport numpy <span class="im">as</span> npimport matplotlib.pyplot <span class="im">as</span> pltimport matplotlib.font_manager <span class="im">as</span> fmimport seaborn <span class="im">as</span> snsfrom scipy <span class="im">import</span> statsimport statsmodels.api <span class="im">as</span> smimport warningswarnings.filterwarnings(<span class="st">'ignore'</span>)<span class="co"># 设置中文字体plt.rcParams['font.sans-serif'] = ['Arial Unicode MS', 'SimHei', 'STHeiti']plt.rcParams['axes.unicode_minus'] = False# 设置图表风格plt.style.use('seaborn-whitegrid')sns.set_palette('husl')# 股票信息stock_list = {    '603063': '禾望电气',    '002518': '科士达',    '603118': '共进股份',    '000063': '中兴通讯',    '600036': '招商银行',    '002142': '宁波银行',    '002594': '比亚迪',    '000002': '万科A',    '600519': '贵州茅台',    '002352': '顺丰控股'}stock_industry = {    '603063': '能源',    '002518': '能源',    '603118': '通讯',    '000063': '通讯',    '600036': '银行',    '002142': '银行',    '002594': '汽车',    '000002': '房地产',    '600519': '白酒',    '002352': '物流'}# 行业颜色映射industry_colors = {    '能源': '#E74C3C',    '通讯': '#3498DB',    '银行': '#2ECC71',    '汽车': '#F39C12',    '房地产': '#9B59B6',    '白酒': '#1ABC9C',    '物流': '#E67E22'}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<div id="cell-3" class="cell">
+<div id="cell-4" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载合并后的数据</span></span>
@@ -280,10 +191,10 @@ window.Quarto = {
 </details>
 </div>
 </section>
-<section id="基本统计量" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="基本统计量"><span class="header-section-number">4.2</span> 2. 基本统计量</h2>
+<section id="基本统计量" class="level2">
+<h2 class="anchored" data-anchor-id="基本统计量">2. 基本统计量</h2>
 <p>计算日收益率的描述性统计，包括年化均值、年化波动率、偏度、峰度、最大回撤。</p>
-<div id="cell-5" class="cell">
+<div id="cell-6" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_max_drawdown(returns):</span>
@@ -336,12 +247,12 @@ window.Quarto = {
 <li><p><strong>最大回撤</strong>：万科A的最大回撤最大（超过-60%），反映了房地产行业周期的剧烈波动。贵州茅台最大回撤较小，体现了其防御属性。</p></li>
 </ol>
 </section>
-<section id="可视化" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="可视化"><span class="header-section-number">4.3</span> 3. 可视化</h2>
-<section id="图1归一化收盘价走势图" class="level3" data-number="4.3.1">
-<h3 data-number="4.3.1" class="anchored" data-anchor-id="图1归一化收盘价走势图"><span class="header-section-number">4.3.1</span> 图1：归一化收盘价走势图</h3>
+<section id="可视化" class="level2">
+<h2 class="anchored" data-anchor-id="可视化">3. 可视化</h2>
+<section id="图1归一化收盘价走势图" class="level3">
+<h3 class="anchored" data-anchor-id="图1归一化收盘价走势图">图1：归一化收盘价走势图</h3>
 <p>以2020-01-01为基准（=1），展示各股票的相对表现。图例按行业分组着色。</p>
-<div id="cell-9" class="cell">
+<div id="cell-10" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">14</span>, <span class="dv">8</span>))</span>
@@ -380,10 +291,10 @@ window.Quarto = {
 <li><p><strong>万科A</strong>在2021年见顶后持续下行，归一化价格跌破0.5，反映了房地产行业深度调整周期。招商银行走势相对平稳，体现出银行股的防御特性。</p></li>
 </ol>
 </section>
-<section id="图2日收益率分布图" class="level3" data-number="4.3.2">
-<h3 data-number="4.3.2" class="anchored" data-anchor-id="图2日收益率分布图"><span class="header-section-number">4.3.2</span> 图2：日收益率分布图</h3>
+<section id="图2日收益率分布图" class="level3">
+<h3 class="anchored" data-anchor-id="图2日收益率分布图">图2：日收益率分布图</h3>
 <p>2×5分面直方图，叠加正态分布曲线，标注均值和标准差。</p>
-<div id="cell-12" class="cell">
+<div id="cell-13" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">2</span>, <span class="dv">5</span>, figsize<span class="op">=</span>(<span class="dv">16</span>, <span class="dv">8</span>))</span>
@@ -429,10 +340,10 @@ window.Quarto = {
 <li><p><strong>波动差异</strong>：禾望电气、科士达的分布更宽（标准差大），招商银行、中国石油的分布更窄（标准差小）。这与前文波动率分析一致，成长股波动大、蓝筹股波动小。</p></li>
 </ol>
 </section>
-<section id="图3收益率相关系数热力图" class="level3" data-number="4.3.3">
-<h3 data-number="4.3.3" class="anchored" data-anchor-id="图3收益率相关系数热力图"><span class="header-section-number">4.3.3</span> 图3：收益率相关系数热力图</h3>
+<section id="图3收益率相关系数热力图" class="level3">
+<h3 class="anchored" data-anchor-id="图3收益率相关系数热力图">图3：收益率相关系数热力图</h3>
 <p>标注数值，按行业排序，讨论同行业内相关性。</p>
-<div id="cell-15" class="cell">
+<div id="cell-16" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 构建收益率宽表</span></span>
@@ -475,10 +386,10 @@ window.Quarto = {
 <li><p><strong>系统性风险</strong>：所有相关系数均为正值，说明A股市场存在显著的系统性风险。即便是业务差异较大的股票，在市场整体波动时也会同涨同跌。</p></li>
 </ol>
 </section>
-<section id="图4宏观指标与股市关系" class="level3" data-number="4.3.4">
-<h3 data-number="4.3.4" class="anchored" data-anchor-id="图4宏观指标与股市关系"><span class="header-section-number">4.3.4</span> 图4：宏观指标与股市关系</h3>
+<section id="图4宏观指标与股市关系" class="level3">
+<h3 class="anchored" data-anchor-id="图4宏观指标与股市关系">图4：宏观指标与股市关系</h3>
 <p>散点图+线性拟合线，标注Pearson相关系数，讨论经济含义。</p>
-<div id="cell-18" class="cell">
+<div id="cell-19" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 准备数据：月度收益率与月度CPI/M2</span></span>
@@ -554,13 +465,13 @@ window.Quarto = {
 </ol>
 </section>
 </section>
-<section id="capm模型估计" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="capm模型估计"><span class="header-section-number">4.4</span> 4. CAPM模型估计</h2>
-<section id="模型设定" class="level3" data-number="4.4.1">
-<h3 data-number="4.4.1" class="anchored" data-anchor-id="模型设定"><span class="header-section-number">4.4.1</span> 4.1 模型设定</h3>
+<section id="capm模型估计" class="level2">
+<h2 class="anchored" data-anchor-id="capm模型估计">4. CAPM模型估计</h2>
+<section id="模型设定" class="level3">
+<h3 class="anchored" data-anchor-id="模型设定">4.1 模型设定</h3>
 <p>CAPM模型公式： <span class="math display">\[r_{i,t} - r_f = \alpha_i + \beta_i (r_{m,t} - r_f) + \varepsilon_{i,t}\]</span></p>
 <p>参数说明： - <span class="math inline">\(r_{i,t}\)</span>：个股日对数收益率 - <span class="math inline">\(r_{m,t}\)</span>：沪深300日对数收益率 - <span class="math inline">\(r_f\)</span>：无风险利率，年化2.0%，日频换算：<span class="math inline">\(r_f^{\text{daily}} = 0.02 / 252\)</span></p>
-<div id="cell-21" class="cell">
+<div id="cell-22" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 准备数据</span></span>
@@ -622,10 +533,10 @@ window.Quarto = {
 </details>
 </div>
 </section>
-<section id="beta系数可视化" class="level3" data-number="4.4.2">
-<h3 data-number="4.4.2" class="anchored" data-anchor-id="beta系数可视化"><span class="header-section-number">4.4.2</span> 4.2 Beta系数可视化</h3>
+<section id="beta系数可视化" class="level3">
+<h3 class="anchored" data-anchor-id="beta系数可视化">4.2 Beta系数可视化</h3>
 <p>Beta系数点图，误差棒表示95%置信区间，按行业分组着色，在β=1处画参考竖线。</p>
-<div id="cell-23" class="cell">
+<div id="cell-24" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">7</span>))</span>
@@ -672,11 +583,11 @@ window.Quarto = {
 </details>
 </div>
 </section>
-<section id="capm结果讨论" class="level3" data-number="4.4.3">
-<h3 data-number="4.4.3" class="anchored" data-anchor-id="capm结果讨论"><span class="header-section-number">4.4.3</span> 4.3 CAPM结果讨论</h3>
-<section id="问题1哪些股票-hatbeta-1属于哪些行业与周期性-vs-防御性分类是否吻合" class="level4" data-number="4.4.3.1">
-<h4 data-number="4.4.3.1" class="anchored" data-anchor-id="问题1哪些股票-hatbeta-1属于哪些行业与周期性-vs-防御性分类是否吻合"><span class="header-section-number">4.4.3.1</span> 问题1：哪些股票 <span class="math inline">\(\hat{\beta} &gt; 1\)</span>？属于哪些行业？与”周期性 vs 防御性”分类是否吻合？</h4>
-<div id="cell-25" class="cell">
+<section id="capm结果讨论" class="level3">
+<h3 class="anchored" data-anchor-id="capm结果讨论">4.3 CAPM结果讨论</h3>
+<section id="问题1哪些股票-hatbeta-1属于哪些行业与周期性-vs-防御性分类是否吻合" class="level4">
+<h4 class="anchored" data-anchor-id="问题1哪些股票-hatbeta-1属于哪些行业与周期性-vs-防御性分类是否吻合">问题1：哪些股票 <span class="math inline">\(\hat{\beta} &gt; 1\)</span>？属于哪些行业？与”周期性 vs 防御性”分类是否吻合？</h4>
+<div id="cell-26" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 筛选beta &gt; 1的股票</span></span>
@@ -696,9 +607,9 @@ window.Quarto = {
 <p>这与”周期性 vs 防御性”分类<strong>基本吻合</strong>： - <strong>周期性行业</strong>（汽车、房地产、新能源设备）Beta较高，因为其业绩与经济周期高度相关 - <strong>防御性行业</strong>（白酒、银行）Beta相对较低，因为需求相对稳定</p>
 <p>但需要注意，Beta不仅反映行业特性，还受到公司业务结构、财务杠杆、市场预期等因素影响。例如，招商银行作为银行股，Beta接近1，既不是典型的高Beta周期股，也不是低Beta防御股。</p>
 </section>
-<section id="问题2hatalpha-是否显著异于零alpha显著意味着什么" class="level4" data-number="4.4.3.2">
-<h4 data-number="4.4.3.2" class="anchored" data-anchor-id="问题2hatalpha-是否显著异于零alpha显著意味着什么"><span class="header-section-number">4.4.3.2</span> 问题2：<span class="math inline">\(\hat{\alpha}\)</span> 是否显著异于零？Alpha显著意味着什么？</h4>
-<div id="cell-28" class="cell">
+<section id="问题2hatalpha-是否显著异于零alpha显著意味着什么" class="level4">
+<h4 class="anchored" data-anchor-id="问题2hatalpha-是否显著异于零alpha显著意味着什么">问题2：<span class="math inline">\(\hat{\alpha}\)</span> 是否显著异于零？Alpha显著意味着什么？</h4>
+<div id="cell-29" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 筛选alpha显著的股票（p &lt; 0.05）</span></span>
@@ -731,9 +642,9 @@ window.Quarto = {
 <li><p><strong>投资启示</strong>：Alpha不显著意味着”战胜市场”并不容易，投资者应更多关注资产配置（Beta暴露）而非选股（Alpha追求）。</p></li>
 </ol>
 </section>
-<section id="问题3r2-最高和最低的股票分别是哪只如何解释差异" class="level4" data-number="4.4.3.3">
-<h4 data-number="4.4.3.3" class="anchored" data-anchor-id="问题3r2-最高和最低的股票分别是哪只如何解释差异"><span class="header-section-number">4.4.3.3</span> 问题3：<span class="math inline">\(R^2\)</span> 最高和最低的股票分别是哪只？如何解释差异？</h4>
-<div id="cell-31" class="cell">
+<section id="问题3r2-最高和最低的股票分别是哪只如何解释差异" class="level4">
+<h4 class="anchored" data-anchor-id="问题3r2-最高和最低的股票分别是哪只如何解释差异">问题3：<span class="math inline">\(R^2\)</span> 最高和最低的股票分别是哪只？如何解释差异？</h4>
+<div id="cell-32" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 找出R²最高和最低的股票</span></span>
@@ -764,10 +675,10 @@ window.Quarto = {
 </section>
 </section>
 </section>
-<section id="宏观指标对股票收益率的影响选做5.2" class="level2" data-number="4.5">
-<h2 data-number="4.5" class="anchored" data-anchor-id="宏观指标对股票收益率的影响选做5.2"><span class="header-section-number">4.5</span> 5. 宏观指标对股票收益率的影响（选做5.2）</h2>
+<section id="宏观指标对股票收益率的影响选做5.2" class="level2">
+<h2 class="anchored" data-anchor-id="宏观指标对股票收益率的影响选做5.2">5. 宏观指标对股票收益率的影响（选做5.2）</h2>
 <p>以月度数据分析宏观指标（CPI、M2）对10只股票月度收益率的影响。</p>
-<div id="cell-34" class="cell">
+<div id="cell-35" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 准备月度数据</span></span>
@@ -789,7 +700,7 @@ window.Quarto = {
 <span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(monthly_data.head(<span class="dv">10</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<div id="cell-35" class="cell">
+<div id="cell-36" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 宏观回归模型</span></span>
@@ -827,10 +738,10 @@ window.Quarto = {
 <span id="cb14-33"><a href="#cb14-33" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_macro[[<span class="st">'股票名称'</span>, <span class="st">'行业'</span>, <span class="st">'γ_CPI'</span>, <span class="st">'γ_CPI p值'</span>, <span class="st">'γ_M2'</span>, <span class="st">'γ_M2 p值'</span>, <span class="st">'R²'</span>]].to_string(index<span class="op">=</span><span class="va">False</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<section id="宏观敏感性分析" class="level3" data-number="4.5.1">
-<h3 data-number="4.5.1" class="anchored" data-anchor-id="宏观敏感性分析"><span class="header-section-number">4.5.1</span> 宏观敏感性分析</h3>
+<section id="宏观敏感性分析" class="level3">
+<h3 class="anchored" data-anchor-id="宏观敏感性分析">宏观敏感性分析</h3>
 <p>可视化各行业对CPI和M2的敏感度。</p>
-<div id="cell-37" class="cell">
+<div id="cell-38" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">14</span>, <span class="dv">6</span>))</span>
@@ -890,10 +801,10 @@ window.Quarto = {
 </ol>
 </section>
 </section>
-<section id="财务指标跨公司对比选做图5" class="level2" data-number="4.6">
-<h2 data-number="4.6" class="anchored" data-anchor-id="财务指标跨公司对比选做图5"><span class="header-section-number">4.6</span> 6. 财务指标跨公司对比（选做图5）</h2>
+<section id="财务指标跨公司对比选做图5" class="level2">
+<h2 class="anchored" data-anchor-id="财务指标跨公司对比选做图5">6. 财务指标跨公司对比（选做图5）</h2>
 <p>ROE折线图：展示各股票近5年ROE变化趋势。</p>
-<div id="cell-40" class="cell">
+<div id="cell-41" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载财务数据</span></span>
@@ -906,7 +817,7 @@ window.Quarto = {
 <span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(roe_data.head(<span class="dv">10</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<div id="cell-41" class="cell">
+<div id="cell-42" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 添加股票名称和行业</span></span>
@@ -956,9 +867,9 @@ window.Quarto = {
 </ul></li>
 </ol>
 </section>
-<section id="总结与结论" class="level2" data-number="4.7">
-<h2 data-number="4.7" class="anchored" data-anchor-id="总结与结论"><span class="header-section-number">4.7</span> 7. 总结与结论</h2>
-<div id="cell-44" class="cell">
+<section id="总结与结论" class="level2">
+<h2 class="anchored" data-anchor-id="总结与结论">7. 总结与结论</h2>
+<div id="cell-45" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"="</span> <span class="op">*</span> <span class="dv">70</span>)</span>
@@ -1454,15 +1365,6 @@ window.Quarto = {
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./02_clean.html" class="pagination-link" aria-label="02 数据清洗">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">02 数据清洗</span></span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-  </div>
-</nav>
 </div> <!-- /content -->
 
 

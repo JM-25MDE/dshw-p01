@@ -1,17 +1,13 @@
 project:
-  type: book
+  type: site
   output-dir: docs
 
-book:
+execute:
+  execute: false
+
+site:
   title: "金融数据获取、管理与初步分析"
   author: "邓佳鸣 (25210124)"
-  date: today
-  repo-url: https://github.com/JM-25MDE/dshw-p01
-  chapters:
-    - index.qmd
-    - 01_download.ipynb
-    - 02_clean.ipynb
-    - 03_analysis.ipynb
 
 resources:
   - output/
