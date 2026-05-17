@@ -284,6 +284,12 @@ window.Quarto = {
 <span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"✅ 图1已保存至 output/fig1_normalized_price.png"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="output/fig1_cumulative_returns.png" class="img-fluid figure-img"></p>
+<figcaption>fig1_normalized_price</figcaption>
+</figure>
+</div>
 <p><strong>图1解读</strong>：</p>
 <ol type="1">
 <li><p><strong>比亚迪</strong>表现最为亮眼，2020年以来涨幅超过5倍，充分体现了新能源汽车行业的爆发式增长。贵州茅台作为白酒龙头，虽有波动但整体保持增长趋势。</p></li>
@@ -294,7 +300,7 @@ window.Quarto = {
 <section id="图2日收益率分布图" class="level3">
 <h3 class="anchored" data-anchor-id="图2日收益率分布图">图2：日收益率分布图</h3>
 <p>2×5分面直方图，叠加正态分布曲线，标注均值和标准差。</p>
-<div id="cell-13" class="cell">
+<div id="cell-14" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">2</span>, <span class="dv">5</span>, figsize<span class="op">=</span>(<span class="dv">16</span>, <span class="dv">8</span>))</span>
@@ -333,6 +339,12 @@ window.Quarto = {
 <span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"✅ 图2已保存至 output/fig2_return_distribution.png"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="output/fig2_return_distribution.png" class="img-fluid figure-img"></p>
+<figcaption>fig2_return_distribution</figcaption>
+</figure>
+</div>
 <p><strong>图2解读</strong>：</p>
 <ol type="1">
 <li><p><strong>分布形态</strong>：所有股票的日收益率分布均呈现尖峰肥尾特征，峰值高于正态分布曲线，尾部更厚。这表明极端正负收益的发生概率高于正态分布假设，对风险管理有重要启示。</p></li>
@@ -343,7 +355,7 @@ window.Quarto = {
 <section id="图3收益率相关系数热力图" class="level3">
 <h3 class="anchored" data-anchor-id="图3收益率相关系数热力图">图3：收益率相关系数热力图</h3>
 <p>标注数值，按行业排序，讨论同行业内相关性。</p>
-<div id="cell-16" class="cell">
+<div id="cell-18" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 构建收益率宽表</span></span>
@@ -379,6 +391,12 @@ window.Quarto = {
 <span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"✅ 图3已保存至 output/fig3_correlation_heatmap.png"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="output/fig3_correlation_matrix.png" class="img-fluid figure-img"></p>
+<figcaption>fig3_correlation_heatmap</figcaption>
+</figure>
+</div>
 <p><strong>图3解读</strong>：</p>
 <ol type="1">
 <li><p><strong>同行业相关性</strong>：能源板块内（禾望电气、科士达、大唐发电、中国石油）相关性差异明显。禾望电气与科士达相关系数较高（约0.5-0.6），两者均属于新能源设备；而大唐发电与中国石油相关性较低，体现了火电与石油的业务差异。这说明同一行业分类下，业务结构的差异会显著影响股价联动性。</p></li>
@@ -389,7 +407,7 @@ window.Quarto = {
 <section id="图4宏观指标与股市关系" class="level3">
 <h3 class="anchored" data-anchor-id="图4宏观指标与股市关系">图4：宏观指标与股市关系</h3>
 <p>散点图+线性拟合线，标注Pearson相关系数，讨论经济含义。</p>
-<div id="cell-19" class="cell">
+<div id="cell-22" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 准备数据：月度收益率与月度CPI/M2</span></span>
@@ -457,6 +475,12 @@ window.Quarto = {
 <span id="cb7-63"><a href="#cb7-63" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"✅ 图4已保存至 output/fig4_macro_correlation.png"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="output/fig4_industry_comparison.png" class="img-fluid figure-img"></p>
+<figcaption>fig4_macro_correlation</figcaption>
+</figure>
+</div>
 <p><strong>图4解读</strong>：</p>
 <ol type="1">
 <li><p><strong>CPI与股市负相关</strong>：CPI同比增速与股票收益率呈现负相关（r≈-0.1至-0.2）。经济含义是：通胀高企时，央行倾向于收紧货币政策，企业成本上升、利润承压，股市表现往往较弱。这符合”通胀无牛市”的市场经验。</p></li>
@@ -471,7 +495,7 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="模型设定">4.1 模型设定</h3>
 <p>CAPM模型公式： <span class="math display">\[r_{i,t} - r_f = \alpha_i + \beta_i (r_{m,t} - r_f) + \varepsilon_{i,t}\]</span></p>
 <p>参数说明： - <span class="math inline">\(r_{i,t}\)</span>：个股日对数收益率 - <span class="math inline">\(r_{m,t}\)</span>：沪深300日对数收益率 - <span class="math inline">\(r_f\)</span>：无风险利率，年化2.0%，日频换算：<span class="math inline">\(r_f^{\text{daily}} = 0.02 / 252\)</span></p>
-<div id="cell-22" class="cell">
+<div id="cell-26" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 准备数据</span></span>
@@ -536,7 +560,7 @@ window.Quarto = {
 <section id="beta系数可视化" class="level3">
 <h3 class="anchored" data-anchor-id="beta系数可视化">4.2 Beta系数可视化</h3>
 <p>Beta系数点图，误差棒表示95%置信区间，按行业分组着色，在β=1处画参考竖线。</p>
-<div id="cell-24" class="cell">
+<div id="cell-28" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">7</span>))</span>
@@ -582,12 +606,18 @@ window.Quarto = {
 <span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"✅ 图5已保存至 output/fig5_beta_coefficients.png"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="output/fig5_capm_beta.png" class="img-fluid figure-img"></p>
+<figcaption>fig5_beta_coefficients</figcaption>
+</figure>
+</div>
 </section>
 <section id="capm结果讨论" class="level3">
 <h3 class="anchored" data-anchor-id="capm结果讨论">4.3 CAPM结果讨论</h3>
 <section id="问题1哪些股票-hatbeta-1属于哪些行业与周期性-vs-防御性分类是否吻合" class="level4">
 <h4 class="anchored" data-anchor-id="问题1哪些股票-hatbeta-1属于哪些行业与周期性-vs-防御性分类是否吻合">问题1：哪些股票 <span class="math inline">\(\hat{\beta} &gt; 1\)</span>？属于哪些行业？与”周期性 vs 防御性”分类是否吻合？</h4>
-<div id="cell-26" class="cell">
+<div id="cell-31" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 筛选beta &gt; 1的股票</span></span>
@@ -609,7 +639,7 @@ window.Quarto = {
 </section>
 <section id="问题2hatalpha-是否显著异于零alpha显著意味着什么" class="level4">
 <h4 class="anchored" data-anchor-id="问题2hatalpha-是否显著异于零alpha显著意味着什么">问题2：<span class="math inline">\(\hat{\alpha}\)</span> 是否显著异于零？Alpha显著意味着什么？</h4>
-<div id="cell-29" class="cell">
+<div id="cell-34" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 筛选alpha显著的股票（p &lt; 0.05）</span></span>
@@ -644,7 +674,7 @@ window.Quarto = {
 </section>
 <section id="问题3r2-最高和最低的股票分别是哪只如何解释差异" class="level4">
 <h4 class="anchored" data-anchor-id="问题3r2-最高和最低的股票分别是哪只如何解释差异">问题3：<span class="math inline">\(R^2\)</span> 最高和最低的股票分别是哪只？如何解释差异？</h4>
-<div id="cell-32" class="cell">
+<div id="cell-37" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 找出R²最高和最低的股票</span></span>
@@ -678,7 +708,7 @@ window.Quarto = {
 <section id="宏观指标对股票收益率的影响选做5.2" class="level2">
 <h2 class="anchored" data-anchor-id="宏观指标对股票收益率的影响选做5.2">5. 宏观指标对股票收益率的影响（选做5.2）</h2>
 <p>以月度数据分析宏观指标（CPI、M2）对10只股票月度收益率的影响。</p>
-<div id="cell-35" class="cell">
+<div id="cell-40" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 准备月度数据</span></span>
@@ -700,7 +730,7 @@ window.Quarto = {
 <span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(monthly_data.head(<span class="dv">10</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<div id="cell-36" class="cell">
+<div id="cell-41" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 宏观回归模型</span></span>
@@ -741,7 +771,7 @@ window.Quarto = {
 <section id="宏观敏感性分析" class="level3">
 <h3 class="anchored" data-anchor-id="宏观敏感性分析">宏观敏感性分析</h3>
 <p>可视化各行业对CPI和M2的敏感度。</p>
-<div id="cell-38" class="cell">
+<div id="cell-43" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">14</span>, <span class="dv">6</span>))</span>
@@ -785,6 +815,12 @@ window.Quarto = {
 <span id="cb15-39"><a href="#cb15-39" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"✅ 图6已保存至 output/fig6_macro_sensitivity.png"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="output/fig6_macro_sensitivity.png" class="img-fluid figure-img"></p>
+<figcaption>fig6_macro_sensitivity</figcaption>
+</figure>
+</div>
 <p><strong>宏观敏感性结果讨论</strong>：</p>
 <ol type="1">
 <li><strong>CPI敏感性行业差异</strong>：
@@ -804,7 +840,7 @@ window.Quarto = {
 <section id="财务指标跨公司对比选做图5" class="level2">
 <h2 class="anchored" data-anchor-id="财务指标跨公司对比选做图5">6. 财务指标跨公司对比（选做图5）</h2>
 <p>ROE折线图：展示各股票近5年ROE变化趋势。</p>
-<div id="cell-41" class="cell">
+<div id="cell-47" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 加载财务数据</span></span>
@@ -817,7 +853,7 @@ window.Quarto = {
 <span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(roe_data.head(<span class="dv">10</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<div id="cell-42" class="cell">
+<div id="cell-48" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 添加股票名称和行业</span></span>
@@ -851,6 +887,12 @@ window.Quarto = {
 <span id="cb17-29"><a href="#cb17-29" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"✅ 图7已保存至 output/fig7_roe_trend.png"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="output/fig6_macro_sensitivity.png" class="img-fluid figure-img"></p>
+<figcaption>fig7_roe_trend</figcaption>
+</figure>
+</div>
 <p><strong>图7解读</strong>：</p>
 <ol type="1">
 <li><p><strong>ROE水平差异</strong>：贵州茅台ROE长期维持在25%-30%的高水平，体现了白酒龙头的强劲盈利能力。招商银行ROE稳定在15%-18%，符合银行股稳健特征。</p></li>
@@ -869,7 +911,7 @@ window.Quarto = {
 </section>
 <section id="总结与结论" class="level2">
 <h2 class="anchored" data-anchor-id="总结与结论">7. 总结与结论</h2>
-<div id="cell-45" class="cell">
+<div id="cell-52" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"="</span> <span class="op">*</span> <span class="dv">70</span>)</span>
