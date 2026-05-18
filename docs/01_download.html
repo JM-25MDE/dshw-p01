@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; 01 数据下载 – 金融数据获取、管理与初步分析</title>
+<title>2&nbsp; 数据下载本Notebook完成所有数据的下载工作，包括：1. 10只股票的后复权日度行情数据2. 沪深300指数（000300）日度数据3. 创业板指（399006）日度数据（自选指数）4. CPI同比增速（宏观指标）5. M2同比增速（自选宏观指标）6. 10只股票的财务指标所有下载结果记录到 download_log.txt。 – 金融数据获取、管理与初步分析</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -120,7 +120,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01_download.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">01 数据下载</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01_download.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">数据下载</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -157,19 +157,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./01_download.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">01 数据下载</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">数据下载</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./02_clean.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">02 数据清洗</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">数据清洗</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03_analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">03 数据分析</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">数据分析</span></span></a>
   </div>
 </li>
     </ul>
@@ -199,7 +199,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">01 数据下载</span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">数据下载本Notebook完成所有数据的下载工作，包括：1. 10只股票的后复权日度行情数据2. 沪深300指数（000300）日度数据3. 创业板指（399006）日度数据（自选指数）4. CPI同比增速（宏观指标）5. M2同比增速（自选宏观指标）6. 10只股票的财务指标所有下载结果记录到 <code>download_log.txt</code>。</span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li></ul></div></div>
 </div>
 
 
@@ -216,8 +216,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>本Notebook完成所有数据的下载工作，包括： 1. 10只股票的后复权日度行情数据 2. 沪深300指数（000300）日度数据 3. 创业板指（399006）日度数据（自选指数） 4. CPI同比增速（宏观指标） 5. M2同比增速（自选宏观指标） 6. 10只股票的财务指标</p>
-<p>所有下载结果记录到 <code>download_log.txt</code>。</p>
 <section id="环境准备" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="环境准备"><span class="header-section-number">2.1</span> 1. 环境准备</h2>
 <div id="cell-2" class="cell">
@@ -1085,8 +1083,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./02_clean.html" class="pagination-link" aria-label="02 数据清洗">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">02 数据清洗</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./02_clean.html" class="pagination-link" aria-label="数据清洗">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">数据清洗</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
